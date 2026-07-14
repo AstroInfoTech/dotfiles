@@ -1,0 +1,7 @@
+{
+  "Insert Japanese Regex": {
+    "prefix": "japanese",
+    "body": "\\p{Hiragana}\\p{Katakana}\\p{Han}",
+    "description": "Hiragana, Katakana, and Han characters"
+  }
+}

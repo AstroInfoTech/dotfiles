@@ -1,0 +1,32 @@
+-- Keymaps are automatically loaded on the VeryLazy event
+-- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
+-- Add any additional keymaps her
+vim.keymap.set("n", "<c-p>", "<Plug>(YankyPreviousEntry)")
+vim.keymap.set("n", "<c-n>", "<Plug>(YankyNextEntry)")
+-- keymap = {
+--   preset = "default",
+--   -- Function calling blink.cmp method
+--   ["<C-j>"] = {
+--     function(cmp)
+--       return cmp.show()
+--     end,
+--   },
+--   ["<C-j>"] = { "show" }, -- This is equivalent as above
+-- }
+--
+
+-- Use lowercase for global marks and uppercase for local marks.
+--
+-- for i = string.byte("a"), string.byte("z") do
+--   local l_char = string.char(i)
+--   local u_char = string.char(i):upper()
+--
+--   vim.keymap.set("n", "m" .. l_char, "m" .. u_char, { remap = false })
+--   vim.keymap.set("n", "m" .. u_char, "m" .. l_char, { remap = false })
+--
+--   vim.keymap.set("n", "'" .. l_char, "'" .. u_char, { remap = false })
+--   vim.keymap.set("n", "'" .. u_char, "'" .. l_char, { remap = false })
+--
+--   vim.keymap.set("n", "`" .. l_char, "`" .. u_char, { remap = false })
+--   vim.keymap.set("n", "`" .. u_char, "`" .. l_char, { remap = false })
+-- end
