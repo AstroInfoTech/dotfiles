@@ -1,0 +1,33 @@
+packages:
+  darwin:
+    brews:
+    - 'imagemagick'
+    - 'ghostscript'
+    - 'mise'
+    - 'chafa'
+    - 'uv'
+    - 'wget'
+    - 'ncdu'
+    - 'htop'
+    casks:
+    - 'docker'
+    - 'wireshark-app'
+  linux:
+    debian:
+      apt:
+      - 'imagemagick'
+      - 'ghostscript'
+      - 'mise'
+      - 'uv'
+      - 'wget'
+      - 'ncdu'
+      - 'htop'
+  docker:
+    apt:
+    - 'imagemagick'
+    - 'ghostscript'
+    - 'mise'
+    - 'uv'
+    - 'wget'
+    - 'ncdu'
+    - 'htop'

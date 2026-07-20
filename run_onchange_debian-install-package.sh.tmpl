@@ -1,0 +1,18 @@
+{{ if eq .chezmoi.osRelease.idLike "debian" -}}
+#!/bin/bash
+
+sudo apt-get update
+
+# install mise 
+sudo apt-get install -y extrepo
+sudo extrepo enable mise
+sudo apt-get install -y mise
+
+{{ range .packages.linux -}}
+sudo apt-get install -y {{ . | quote }}
+{{ end -}}
+
+mise install -y
+
+{{ end -}}
+

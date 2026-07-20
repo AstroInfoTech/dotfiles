@@ -1,0 +1,13 @@
+{{ if eq .chezmoi.osRelease.idLike "debian" -}}
+
+# install tmux plugin manager
+if [ -d "~/.tmux/plugins/tpm" ]; then
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+fi
+
+if command -v zsh >/dev/null ; then 
+  apt install zsh 
+fi
+chsh -s $(command -z zsh)
+
+{{ end -}}
