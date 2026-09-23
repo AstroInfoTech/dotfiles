@@ -1,0 +1,60 @@
+{
+	"name": "Vimium C",
+	"@time": "2026/7/4 13:51:03",
+	"time": 1783140663804,
+	"environment": {
+		"extension": "2.12.2",
+		"platform": "win",
+		"chromium": 150
+	},
+	"exclusionRules": [
+		{
+			"passKeys": "",
+			"pattern": "^https?://mail\\.google\\.com/"
+		},
+		{
+			"passKeys": "",
+			"pattern": "^https?://localhost:8888/"
+		},
+		{
+			"passKeys": "",
+			"pattern": "^https?://typingx0\\.net/"
+		},
+		{
+			"passKeys": "",
+			"pattern": "^https?://askiisoft\\.com/"
+		},
+		{
+			"passKeys": "",
+			"pattern": "^https?://html5\\.nicogame\\.jp/"
+		},
+		{
+			"passKeys": "",
+			"pattern": "^https?://remotedesktop\\.google\\.com/"
+		},
+		{
+			"passKeys": "",
+			"pattern": "^https?://quizlet\\.com/"
+		},
+		{
+			"passKeys": "",
+			"pattern": "^https?://www\\.duolingo\\.com/"
+		},
+		{
+			"passKeys": "",
+			"pattern": "^https?://colab\\.research\\.google\\.com/"
+		}
+	],
+	"keyLayout": 2,
+	"keyMappings": [
+		"#!no-check",
+		"# 小文字の m + キー でグローバルマークを登録（大文字にマッピング）",
+		"# 小文字の ` + キー でグローバルマークにジャンプ（大文字にマッピング）",
+		"map ` Marks.activateGotoMode swap",
+		"map ' Marks.activateGotoMode swap",
+		"map m Marks.activateCreateMode swap",
+		""
+	],
+	"linkHintCharacters": "asdfgqwertzxcv",
+	"vimSync": true
+}
